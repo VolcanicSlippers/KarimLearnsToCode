@@ -1,0 +1,36 @@
+/**
+ * We will create a two-dimensional array that will allow us to print two arrays.
+ * 
+ * @author Karim
+ *
+ */
+public class Grocery {
+
+	// create and output 2d arrays
+	public static void main(String[] args) {
+
+		String fruits[][] = { { "Banana", "Orange", "Grapes", "Apple" } };
+		String biscuits[][] = { { "Oreos", "Custard Cream", "Kitkat" } };
+
+		System.out.println("The fruits we will buy:");
+		outputList(fruits); // displays fruits by row
+
+		System.out.println("The biscuits we will buy:");
+		outputList(biscuits); // displays fruits by row
+
+	}
+
+	// output rows and columns of a two-dimensional array
+	public static void outputList(String[][] fruits) {
+
+		// loop through array's row which shows fruits
+		for (int row = 0; row < fruits.length; row++) {
+			// loop through columns of current row
+			for (int column = 0; column < fruits[row].length; column++)
+				System.out.printf("%-19s", fruits[row][column]);
+
+			System.out.println();
+		}
+	}
+
+}
