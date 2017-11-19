@@ -2,8 +2,8 @@
  * Aircraft is a class that notes an aircraft's Maximal speed, its maximal
  * weight and the maximum number of people it can carry.
  * 
- * @author Abdikariim Timer
- * @version 16/11/2017
+ * @author Karim
+ * @version 19/11/2017
  *
  */
 public class Aircraft {
